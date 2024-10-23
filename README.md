@@ -1,7 +1,7 @@
 # rizzlang
 The rizziest programming language ever made.
 
-```haskell
+```cpp
 // Welcome to rizzlang
 sigma x is 100
 sigma t is cringe
@@ -16,7 +16,7 @@ sigma app skill then (
     ratio input is "die" then ick
     ratio then yap "invalid option"
   cooked
-  yap "goodbyte"
+  yap "goodbye"
   die
 )
 
