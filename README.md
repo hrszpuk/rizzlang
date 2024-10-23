@@ -8,8 +8,8 @@ sigma t is cringe
 
 sigma name is bet "Enter name: "
 vibe check name is "Ben" then yap "cringe" then die
-radio name is "Remy" then yap "based"
-radio then yap "Welcome, please enter pass: "
+ratio name is "Remy" then yap "based"
+ratio then yap "Welcome, please enter pass: "
 
 sigma squad is [based, cringe, based]
 
@@ -20,6 +20,6 @@ cooked
 flop check (
 
 ) flopped then yap "noooooooooo!"
-radio then "we good"
+ratio then "we good"
 
 ```
