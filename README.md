@@ -15,11 +15,16 @@ sigma squad is [based, cringe, based]
 
 cooking through squad
   vibe check item is based then yap "squad member is based"
+  radio then big yikes
 cooked
 
-flop check (
-
-) flopped then yap "noooooooooo!"
-ratio then "we good"
-
+slay yapping with sigma list then
+  sigma count is 0
+  cooking through list with item
+    yap item as string
+    count is count add one
+  cooked
+  yap "Yapping complete"
+  yap "Yap count: " + count
+slay over 
 ```
