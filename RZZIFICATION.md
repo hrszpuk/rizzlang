@@ -55,48 +55,51 @@ sigma z is "Hello, World!"
 // If statement
 vibe check x is less than 100 then yap "x < 100"
 ratio x is 100 then yap "x == 100"
-ratio x is greater than 100 then tap "x > 100"
-ratio then yap "idek"
+ratio x is greater than 100 { tap "x > 100" }
+ratio then yap "idek" 
 
 // Pattern matching
-goofy x 
+goofy x {
   ahh 100 then yap "x == 100"
   ahh <100 then yap "x < 100"
   ahh >100 then yap "x > 100" fall
   ahh -100..0 then fall
-ahh then yap "oh no" then sigma x is 10
+  ahh { yap "oh no" sigma x is 10 }
+}
 
 // Loops
-cooking y 
-  then x is x - 1
-  then yap x
-  then vibe check x is 0 then big yikes
-cooked
+cooking y {
+  x is x - 1
+  yap x
+  vibe check x is 0 then cooked 
+}
 
-cooking from x to 0
-  then sigma i is x's index
-  then yap i
-cooked
+cooking from x to 0 {
+  sigma i is x's index
+  yap i
+}
 
 // Lists
 sigma squad is [based, cringe, based, based]
 sigma squad2 is [..squad, based, based]
 
-cooking through squad with item
+cooking through squad with item {
   yap item
-cooked
+}
 
 // Functions
 slay double with sigma a then rizz a * 2
-slay string_to_list with sigma s
-  then sigma l is []
-  then cooking through s with c then append c to l cooked
-  then rizz l
+slay string_to_list with sigma s {
+  sigma l is []
+  cooking through s with c then append c to l cooked
+  rizz l
+}
 
 /// Main function
-main character with sigma argc argv
+main character with sigma argc argv {
   then yap z
-rizz 
+  rizz
+}
 
 // Sum types
 zesty Game is Win or Loss
@@ -110,24 +113,26 @@ combo Point is sigma int x int y
 sigma p is Point 10 10
 
 // Traits
-looksmaxxing Barkable where
+looksmaxxing Barkable where {
   slay bark then yap "Bark"
-over
+}
 
-glow up Barkable for Point where
+glow up Barkable for Point where {
   slay bark then yap "Bark"
+}
 
 // Error handling
-slay some_func with sigma a 
-  then vibe check a is not 100 then clapback "a is not 100" r
-       ratio then rizz a
+slay some_func with sigma a {
+  vibe check a is not 100 then clapback "a is not 100" 
+  ratio then rizz a
+}
 
 yap (yeet some_func)
 
 // Namespace
-era Code where
+era Code where {
 // ...
-era over
+}
 
 // Packages
 grab SomePackage from "../.."
