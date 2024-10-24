@@ -3,7 +3,22 @@ A specification for the rizz programming language.
 
 ## Table of Contents
 - [Variables](#variables)
+
+```
+sigma x is 100
+sigma t
+t is based
+```
 - [Values](#values)
+```
+// boolean
+based
+cringe
+
+// numeric
+100          // Integer
+3.14         // Floats
+```
 - [If statements](#if-if-else-and-else-statements)
 - [Switch statements](#switch-statement)
 - [Loops](#loops)
